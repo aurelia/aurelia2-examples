@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "incremental": true,
+      "target": "es2020",
+      "module": "esnext",
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "noImplicitAny": false,
+      "lib": ["esnext", "DOM"],
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "declaration": true,
+      "declarationMap": true,
+      "sourceMap": true,
+      "esModuleInterop": true,
+      "forceConsistentCasingInFileNames": true,
+      "skipLibCheck": true,
+      "preserveConstEnums": true,
+      "typeRoots": [
+        "./types/",
+        "./node_modules/@types/",
+      ]
+    },
+    "files": [
+        "./types/global.d.ts"
+    ]
+  }
