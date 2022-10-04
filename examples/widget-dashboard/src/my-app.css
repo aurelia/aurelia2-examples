@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+  position: relative;
+}
+
+body {
+  background: #1E1E1E;
+  color: #FFF;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  align-items: flex-start;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 50px;
+  width: 100%;
+}
+
+date-component,
+dog-component,
+geoip-component,
+notes-component,
+exchange-component {
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+}
+
+date-component {
+  background: linear-gradient(45deg, #281dd4, #a42bff);
+  border-radius: 12px;
+  max-width: 500px;
+}
+
+geoip-component {
+  width: auto;
+}
+
+notes-component,
+exchange-component {
+  max-width: 450px;
+  width: auto;
+}
+
+exchange-component {
+  background: linear-gradient(45deg, #d41d71, #a42bff);
+  border-radius: 12px;
+}
+
+dog-component {
+  max-width: 800px;
+}
+
+geoip-component {
+  grid-column: span 4;
+}
+
+h3 {
+  margin: 0 0 15px 0;
+}
+
+h4 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0 0 10px 0;
+}
+
+img {
+  height: 500px;
+  object-fit: cover;
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  margin: 0 0 50px 0;
+  padding: 0;
+}

@@ -1,0 +1,13 @@
+.delete-btn {
+    background: none;
+    border: none;
+    color: #FF0000;
+    cursor: pointer;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .notes li {
+      margin-bottom: 10px;
+  }

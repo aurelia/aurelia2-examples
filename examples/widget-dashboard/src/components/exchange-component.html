@@ -1,0 +1,15 @@
+<div class="component exchange-component" promise.bind="api.fetchData('https://api.exchangerate-api.com/v4/latest/USD')">
+    <template pending><p>Fetching data...</p></template>
+    <template then.from-view="data">
+        <h3>$1 USD equals:</h3>
+        <ul class="amounts-list">
+            <li>$${data.rates.AUD} Australian Dollars (AUD)</li>
+            <li>$${data.rates.NZD} New Zealand Dollars (NZD)</li>
+            <li>$${data.rates.CAD} Canadian Dollars (CAD)</li>
+            <li>£${data.rates.GBP} British Pounds (GBP)</li>
+        </ul>
+    </template>
+    <template catch.from-view="err">
+        <p>${err}</p>
+    </template>
+</div>

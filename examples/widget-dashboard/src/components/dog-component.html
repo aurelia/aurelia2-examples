@@ -1,0 +1,9 @@
+<div class="component dog-component" promise.bind="api.fetchData('https://random.dog/woof.json', 'Unable to fetch doggo :(')">
+    <template pending>Fetching doggo...</template>
+    <template then.from-view="dog">
+        <img src.bind="dog.url" loading="lazy">
+    </template>
+    <template catch.from-view="err">
+        <p>${err}</p>
+    </template>
+</div>

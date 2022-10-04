@@ -1,0 +1,13 @@
+<div class="component geoip-component" promise.bind="api.fetchData('https://freegeoip.io/json/')">
+    <template pending><p>Getting details...</p></template>
+
+    <ul then.from-view="details">
+        <li><h3>IP address:</h3> <span> ${details.ip}</span></li>
+        <li><h3>Country:</h3> <span> ${details.country_name}</span></li>
+        <li><h3>Timezone:</h3> <span> ${details.time_zone}</span></li>
+    </ul>
+
+    <template catch.from-view="err">
+        <p>${err}</p>
+    </template>
+</div>
