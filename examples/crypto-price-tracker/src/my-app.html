@@ -1,0 +1,44 @@
+<import from="./resources/value-converters/currency"></import>
+
+<div class="container">
+    <h1 class="mt-5">Crypto Prices</h1>
+
+    <table class="table table-striped mt-5">
+        <thead class="table-dark">
+            <tr>
+              <th scope="col">Name</th>
+              <th scope="col">Price (USD)</th>
+            </tr>
+          </thead>
+        <tbody>
+            <tr>
+                <td><strong>Bitcoin</strong></td>
+                <td>${prices.bitcoin.usd | currency}</td>
+            </tr>
+            <tr>
+                <td><strong>Ethereum</strong></td>
+                <td>${prices.ethereum.usd | currency}</td>
+            </tr>
+            <tr>
+                <td><strong>Tether</strong></td>
+                <td>${prices.tether.usd | currency}</td>
+            </tr>
+            <tr>
+                <td><strong>Binance Coin</strong></td>
+                <td>${prices.binancecoin.usd | currency}</td>
+            </tr>
+            <tr>
+                <td><strong>Dogecoin</strong></td>
+                <td>${prices.dogecoin.usd | currency}</td>
+            </tr>
+            <tr>
+                <td><strong>Cardano</strong></td>
+                <td>${prices.cardano.usd | currency}</td>
+            </tr>
+            <tr>
+                <td><strong>Ripple</strong></td>
+                <td>${prices.ripple.usd | currency}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

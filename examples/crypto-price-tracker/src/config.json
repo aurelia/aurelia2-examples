@@ -1,0 +1,11 @@
+{
+    "coins": [
+        "bitcoin",
+        "ethereum",
+        "tether",
+        "binancecoin",
+        "dogecoin",
+        "cardano",
+        "ripple"
+    ]
+}
