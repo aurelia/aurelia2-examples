@@ -6,7 +6,8 @@
     "author": "Dwayne Charrington <dwaynecharrington@gmail.com",
     "license": "MIT",
     "scripts": {
-        "build": "npm run build --workspaces"
+        "build": "npm run build --workspaces",
+        "add": "npm install --package-lock-only --no-package-lock --prefix"
     },
     "workspaces": [
         "examples/*"
