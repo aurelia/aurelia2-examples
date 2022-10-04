@@ -2,6 +2,10 @@
 
 A crypto price tracker application bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
+## Demo
+
+A demo of this application is running here: https://aurelia2-crypto-tracker.vercel.app/
+
 ## Description
 
 An Aurelia 2 application showcasing the use of vanilla CSS and Shadow DOM for styling. This example also uses Bootstrap 5 for styling, and you can see how Bootstrap 5 is integrated into the application. This example showcases how you can communicate with an API using the Aurelia Fetch Client and using a service to store your API code for reuse throughout your application.

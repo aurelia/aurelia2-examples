@@ -10,3 +10,4 @@ Pull this repository down and run `npm install` in the root directory to install
 
 - [Aurelia 2 Todo](examples/aurelia2-todo): https://aurelia2-todo.vercel.app/
 - [Crypto Price Tracker](examples/crypto-price-tracker): https://aurelia2-crypto-tracker.vercel.app/
+- [Widget Dashboard](examples/widget-dashboard): https://widget-dashboard.vercel.app/

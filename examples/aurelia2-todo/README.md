@@ -2,6 +2,10 @@
 
 A todo application bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
+## Demo
+
+A demo of this application is running here: https://aurelia2-todo.vercel.app/
+
 ## Description
 
 A simplistic Aurelia 2 application that is about as standard as you can get.

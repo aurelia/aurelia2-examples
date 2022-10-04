@@ -1,6 +1,23 @@
-# widget-dashboard
+# Widget Dashboard
 
-This project is bootstrapped by [aurelia/new](https://github.com/aurelia/new).
+A widget-based dashboard application bootstrapped by [aurelia/new](https://github.com/aurelia/new).
+
+## Demo
+
+A demo of this application is running here: https://widget-dashboard.vercel.app/
+
+## Description
+
+An Aurelia 2 application showcasing the use of CSS Modules and component composition. You will also see how you can use composition to create dynamic user interfaces with Aurelia.
+
+## Features:
+
+- Plain CSS
+- CSS Modules for styling
+- Use of `au-compose` for dynamic composition
+- Use of Aurelia Fetch Client to make requests to an API
+- TypeScript
+- Webpack for bundling
 
 ## Start dev web server
 
