@@ -1,0 +1,7 @@
+<div class="metronome">
+    <div class="slider">
+      <div>${bpm} BPM</div>
+      <input type="range" min="60" max="320" value.bind="bpm" />
+    </div>
+    <button click.trigger="startStop()">${playing ? 'Stop' : 'Start'}</button>
+</div>
