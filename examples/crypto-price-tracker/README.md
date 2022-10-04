@@ -1,6 +1,18 @@
-# crypto-price-tracker
+# Crypto Price Tracker
 
-This project is bootstrapped by [aurelia/new](https://github.com/aurelia/new).
+A crypto price tracker application bootstrapped by [aurelia/new](https://github.com/aurelia/new).
+
+## Description
+
+An Aurelia 2 application showcasing the use of vanilla CSS and Shadow DOM for styling. This example also uses Bootstrap 5 for styling, and you can see how Bootstrap 5 is integrated into the application.
+
+## Features:
+
+- Plain CSS
+- ShadowDOM for modularized component styles
+- Integration of third-party Bootstrap 5 library
+- TypeScript
+- Webpack for bundling
 
 ## Start dev web server
 

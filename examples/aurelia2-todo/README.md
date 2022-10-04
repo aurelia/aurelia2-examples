@@ -2,7 +2,15 @@
 
 A todo application bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
+## Description
+
+A simplistic Aurelia 2 application that is about as standard as you can get.
+
 ## Features:
+
+- Plain CSS
+- TypeScript
+- Webpack for bundling
 
 ## Start dev web server
 
