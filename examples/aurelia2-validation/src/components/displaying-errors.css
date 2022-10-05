@@ -1,0 +1,11 @@
+.invalid-form-input {
+    border-color: #dc3545;
+}
+
+.invalid-form-input + .invalid-feedback {
+    display: block;
+}
+
+.valid-form-input {
+    border-color: #198754;
+}

@@ -1,0 +1,90 @@
+<div class="container pt-5">
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Displaying Errors</h1>
+            <p>There are many different ways you can display errors. In this section you'll see some examples of displaying errors and styling. All validation logic is handled inside of <code>displaying-errors.ts</code></p>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-6">
+            <h2>Controller errors</h2>
+            <p>Accessing the errors array on the controller instance, we can display any errors.</p>
+
+            <ul class="errors list-unstyled">
+                <li class="text-danger" repeat.for="error of validationController.results" if.bind="!error.valid">${error}</li>
+            </ul>
+            
+            <form submit.trigger="submit()">
+                <div validation-errors.from-view="errors">
+                    <div class="mb-3">
+                        <input class="form-control" value.bind="person.name & validate" placeholder="Name">
+                    </div>
+        
+                    <div class="mb-3">
+                        <input class="form-control" value.bind="person.age & validate" placeholder="Age (must be over 18)">
+                    </div>
+                </div>
+
+                <button class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-6">
+            <h2>A list of errors</h2>
+            <p>Using the <code>validation-errors</code> attribute we can capture errors for validated inputs.</p>
+            
+            <form submit.trigger="submit()">
+                <div validation-errors.from-view="errors">
+                    <div class="mb-3">
+                        <input class="form-control" value.bind="person.name & validate" placeholder="Name">
+                    </div>
+        
+                    <div class="mb-3">
+                        <input class="form-control" value.bind="person.age & validate" placeholder="Age (must be over 18)">
+                    </div>
+
+                    <div if.bind="errors.length">
+                        <strong>There were some errors:</strong>
+                        <ul class="errors list-unstyled" >
+                            <li class="text-danger" repeat.for="error of errors">${error.result.message}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="row mb-4">
+        <div class="col-6">
+            <h2>Highlighting fields</h2>
+            <p>Using the <code>validation-errors</code> attribute we can capture errors for validated inputs and independently style them.</p>
+            
+            <form submit.trigger="submit()" class="needs-validation" novalidate>
+                <div>
+                    <div class="mb-3" validation-errors.from-view="nameErrors">
+                        <input class="form-control ${nameErrors.length ? 'invalid-form-input' : ''}" value.bind="person.name & validate" placeholder="Name">
+                        <div class="invalid-feedback" if.bind="nameErrors.length">
+                            ${nameErrors.map(x => x.result.message).join(', ')}
+                        </div>
+                    </div>
+        
+                    <div class="mb-3" validation-errors.from-view="ageErrors">
+                        <input class="form-control ${ageErrors.length ? 'invalid-form-input' : ''}" value.bind="person.age & validate" placeholder="Age (must be over 18)">
+                        <div class="invalid-feedback" if.bind="ageErrors.length">
+                            ${ageErrors.map(x => x.result.message).join(', ')}
+                        </div>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>

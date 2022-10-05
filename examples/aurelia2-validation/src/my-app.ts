@@ -19,6 +19,12 @@ export class MyApp {
             title: 'Advanced',
             id: 'advanced'
         },
+        {
+            path: 'displaying-errors',
+            component: () => import('./components/displaying-errors'),
+            title: 'Displaying Errors',
+            id: 'displaying-errors'
+        },
 
     ];
 }
