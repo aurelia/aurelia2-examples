@@ -1,0 +1,9 @@
+<bindable name="todo"></bindable>
+<bindable name="index"></bindable>
+<bindable name="deleteTodo"></bindable>
+
+<div class="todo-item" completed.class="todo.completed">
+    <input type="checkbox" checked.to-view="todo.completed" change.dispatch="{type: 'todoCheck', params: [$event, $parent.index]}">
+    <p contenteditable="true" spellcheck="false">${todo.text}</p>
+    <button type="button" click.trigger="deleteTodo()">x</button>
+</div>

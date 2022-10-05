@@ -1,0 +1,15 @@
+<import from="./todo-item.html"></import>
+
+<div class="todo">
+    <h1>Aurelia 2 Todo (state management)</h1>
+
+    <div class="todo-container">
+        <div class="todo-compose">
+            <input type="text" value.bind="todoText" keypress.trigger="newTodo($event)" placeholder="What do you want to do today?">
+        </div>
+
+        <div class="todo-items">
+            <todo-item repeat.for="todo of todos & state" todo.bind="todo" index.bind="$index" delete-todo.call="deleteTodo($index)"></todo-item>
+        </div>
+    </div>
+</div>
