@@ -1,0 +1,61 @@
+<div class="container pt-5">
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Basic Animation</h1>
+            <p>In this section, we show you how to leverage the native animation API inside your Aurelia applications. All animation logic is defined inside of <code>basic-animation.ts</code></p>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2>Fade In Animation</h2>
+            <p>A simple fade in animation that animates opacity of 0 to 1.</p>
+
+            <div ref="fadeInElement" class="placeholder d-block mb-3" style="height: 150px;"></div>
+            
+            <button type="button" class="btn btn-primary" click.trigger="fadeIn(fadeInElement)">Fade In</button>
+        </div>
+
+        <div class="col-6">
+            <h2>Fade Out Animation</h2>
+            <p>A simple fade out animation that animates opacity of 1 to 0.</p>
+
+            <div ref="fadeOutElement" class="placeholder d-block mb-3" style="height: 150px;"></div>
+            
+            <button type="button" class="btn btn-primary" click.trigger="fadeOut(fadeOutElement)">Fade Out</button>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2>Infinite Rotate Animation</h2>
+            <p>An endless rotation animation that animates the rotate property. Unlike the other animations, we can cancel this one.</p>
+
+            <div ref="rotateElement" class="placeholder d-block mb-3" style="height: 150px;"></div>
+            
+            <button type="button" class="btn btn-primary" click.trigger="rotate(rotateElement)">Start Rotate</button>
+            <button type="button" class="btn btn-secondary" click.trigger="rotateAnimation.cancel()">Stop Rotate</button>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <h2>Flip (vertical) Animation</h2>
+            <p>A simple vertical flip animation that animates the rotateX value.</p>
+
+            <div ref="flipXElement" class="placeholder d-block mb-3" style="height: 150px;"></div>
+            
+            <button type="button" class="btn btn-primary" click.trigger="flip(flipXElement, 'X')">Flip</button>
+        </div>
+        <div class="col-6">
+            <h2>Flip (horizontal) Animation</h2>
+            <p>A simple horizontal flip animation that animates the rotateY value.</p>
+
+            <div ref="flipYElement" class="placeholder d-block mb-3" style="height: 150px;"></div>
+            
+            <button type="button" class="btn btn-primary" click.trigger="flip(flipYElement)">Flip</button>
+        </div>
+    </div>
+
+</div>

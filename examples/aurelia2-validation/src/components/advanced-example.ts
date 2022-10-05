@@ -34,7 +34,6 @@ export class AdvancedExample {
   }
 
   public async submit() {
-    console.log(this.validationController);
     const result = await this.validationController.validate();
 
     if (result.valid) {

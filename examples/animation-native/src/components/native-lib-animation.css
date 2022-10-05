@@ -1,0 +1,8 @@
+.small-box {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #00ffdb;
+    margin: 10px;
+    flex-shrink: 0;
+}

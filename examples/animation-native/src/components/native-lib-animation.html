@@ -1,0 +1,42 @@
+<div class="container pt-5">
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Native Lib Animation</h1>
+            <p>In the basic animation section, we used the native Web Animations API. In this example, we'll be using a library called Motion which uses the Web Animations API, but provides easier ways to animate. All animation logic is defined inside of <code>native-lib-animation.ts</code></p>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2>Rotate Animation</h2>
+
+            <div ref="rotateBox" class="placeholder d-block mb-3" style="background: #00ffdb; border-radius: 10px; height: 150px;"></div>
+            
+            <button type="button" class="btn btn-primary" click.trigger="rotate(rotateBox)">Rotate</button>
+        </div>
+
+        <div class="col-6">
+            <h2>Seesaw Animation</h2>
+
+            <div ref="seeSawElement" class="placeholder d-block mb-3" style="background: #00ffdb; border-radius: 10px; height: 150px;"></div>
+            
+            <button type="button" class="btn btn-primary" click.trigger="seesaw(seeSawElement)">Seesaw!</button>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2>Staggered Animation</h2>
+
+            <div class="small-box staggered"></div>
+            <div class="small-box staggered"></div>
+            <div class="small-box staggered"></div>
+            <div class="small-box staggered"></div>
+            <div class="small-box staggered"></div>
+            
+            <button type="button" class="btn btn-primary" click.trigger="staggerElements('.small-box')">Stagger</button>
+        </div>
+    </div>
+
+</div>

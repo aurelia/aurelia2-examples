@@ -2,7 +2,7 @@ export class MyApp {
     static routes = [
 
         {
-            path: '',
+            path: ['', 'home'],
             component: () => import('./components/home-page'),
             title: 'Home',
             id: 'home'
