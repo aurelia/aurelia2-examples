@@ -38,16 +38,29 @@ Covers working with the versatile and powerful Aurelia 2 state plugin for state 
 - [Source](examples/aurelia2-state) 
 - [Demo](https://aurelia2-state.vercel.app/)
 
+---
+
 #### Aurelia 2 State Persistence
 
-How to implement persistent state in the Aurelia State plugin. A copy of the previous Aurelia 2 State example, with persistence enabled out of the box. Make changes and refresh the page to see them persist.
+How to implement persistent state in the Aurelia State plugin. A copy of the previous Aurelia 2 State example, with persistence, enabled out of the box. Make changes and refresh the page to see them persist.
 
 - [Source](examples/aurelia2-state-persistence) 
 - [Demo](https://aurelia2-state-persistence.vercel.app/)
 
 ---
 
+#### Aurelia 2 Localization
+
+An Aurelia application using the i18n package to implement localization functionality. In this application, you'll learn how to implement a language switcher to switch between locales as well as display locale values in your application.
+
+- [Source](examples/aurelia2-localization) 
+- [Demo](https://aurelia2-localization.vercel.app/)
+
+---
+
 ### Integrations
+
+Integrations are third-party libraries and packages like Tailwind and CSS-in-JS solutions.
 
 #### Aurelia 2 Tailwind
 
@@ -59,6 +72,8 @@ An Aurelia 2 application that showcases how to use TailwindCSS with Aurelia 2. I
 ---
 
 ### Apps & Fun
+
+These applications are intended to show you how easy and fun it is to build small feature-based applications, while at the same time teaching you new things about Aurelia 2.
 
 #### Aurelia 2 Todo
 
@@ -89,7 +104,7 @@ An application showing dynamic composition using `au-compose` as well as creatin
 
 #### Metronome App
 
-A fun Aurelia 2 metronome application. Serves no purpose than to show you a real functioning application.
+A fun Aurelia 2 metronome application. A simple slider determines the BPM of the metronome. We bind to the input and then use native Audio API's to play two different sounds based on the NPM interval calculated from the slider value.
 
 - [Source](examples/metronome-app) 
 - [Demo](https://metronome-app.vercel.app/)
@@ -98,7 +113,7 @@ A fun Aurelia 2 metronome application. Serves no purpose than to show you a real
 
 #### QR Creator App
 
-A fun Aurelia 2 QR creator application. Enter a URL and get a QR code in return.
+A fun Aurelia 2 QR creator application. Enter a URL and get a QR code in return. In this example, you will learn how to bind to a text input, how to use a third-party NPM package and bind an encoded image string to the `src` of an image.
 
 - [Source](examples/qr-creator-app) 
 - [Demo](https://qr-creator-app.vercel.app/)
