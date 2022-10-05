@@ -1,0 +1,20 @@
+<div class="container">
+
+    <form submit.trigger="submit()">
+        <div validation-errors.from-view="errors">
+          <input value.bind="person.name & validate" placeholder="Name">
+          <br>
+          <br>
+          <input value.bind="person.age & validate" placeholder="Age (must be over 18)">
+    
+          <div>
+            <span repeat.for="error of errors">${error.result.message}</span>
+          </div>
+        </div>
+
+        <br>
+
+        <button>Submit</button>
+    </form>
+
+</div>
