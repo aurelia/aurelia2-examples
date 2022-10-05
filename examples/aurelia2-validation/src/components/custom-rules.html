@@ -19,6 +19,10 @@
                     <div class="mb-3">
                         <input class="form-control" value.bind="person.age & validate" placeholder="Age (must be over 18)">
                     </div>
+        
+                    <div class="mb-3">
+                        <input type="text" class="form-control" value.bind="person.color & validate" placeholder="Select a color">
+                    </div>
 
                     <div if.bind="errors.length">
                         <strong>There were some errors:</strong>

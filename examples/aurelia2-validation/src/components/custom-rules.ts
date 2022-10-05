@@ -17,6 +17,18 @@ class DogValidationRule extends BaseValidationRule {
   }
 }
 
+class HexColorRule extends BaseValidationRule {
+  constructor() {
+    super();
+  }
+
+
+  public execute(_value: string, _object?: IValidateable<any>) {
+    const condition = /^#([0-9a-f]{3}){1,2}$/i;
+    return condition.test(_value);
+  }
+}
+
 export class CustomRules {
   private person: Person;
 
@@ -35,7 +47,9 @@ export class CustomRules {
       .withMessage("${$displayName} does not contain the word dog")
       .ensure('age')
       .required()
-      .min(18);
+      .min(18)
+      .ensure('color')
+      .satisfiesRule(new HexColorRule())
   }
 
   public async submit() {
