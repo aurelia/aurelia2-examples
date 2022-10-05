@@ -1,0 +1,34 @@
+<import from="./components/language-switcher"></import>
+
+<br>
+
+<div class="container">
+
+    <language-switcher></language-switcher>
+
+    <br>
+    <br>
+    
+    <h1>${'greeting' & t}</h1>
+
+    <p t="introText"></p>
+
+    <br>
+    <br>
+
+    <h2 t="localizedButtons"></h2>
+    <br>
+
+    <!-- These buttons reference a sub object inside of our translation.json files -->
+    <button type="button">${'btn.submit' & t}</button>
+
+    <br>
+    <br>
+
+    <h2 t="formInputs"></h2>
+    <br>
+
+    <p t="placeholderExampleText"></p>
+    <input type="text" t="[placeholder]inputPlaceholder">
+
+</div>

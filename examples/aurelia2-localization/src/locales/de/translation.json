@@ -1,0 +1,14 @@
+{
+    "hello": "hallo",
+    "greeting": "Willkommen bei der Aurelia Lokalisierungs-App",
+    "introText": "Wenn Sie die Sprache aus der Dropdown-Liste oben in dieser Anwendung wechseln, sollten Sie sehen, dass sich der Text ändert.",
+    "localizedButtons": "Lokalisierte Schaltflächen",
+    "formInputs": "Formulareingaben",
+    "inputPlaceholder": "Dies ist ein lokalisierter Eingabeplatzhalter",
+    "placeholderExampleText": "Das Platzhalterattribut wird lokalisiert. Sie können mehrere Attribute haben.",
+    "btn": {
+        "submit": "Einreichen!",
+        "cancel": "Absagen",
+        "confirm": "Ok"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "hello": "hello",
+    "greeting": "Welcome to the Aurelia localization app",
+    "introText": "By switching the language from the dropdown at the top of this application, you should see the text change.",
+    "localizedButtons": "Localized Buttons",
+    "formInputs": "Form inputs",
+    "inputPlaceholder": "This is a localized input placeholder",
+    "placeholderExampleText": "The placeholder attribute is being localized. You can have multiple attributes.",
+    "btn": {
+        "submit": "Submit!",
+        "cancel": "Cancel",
+        "confirm": "Ok"
+    }
+}

@@ -1,0 +1,14 @@
+{
+    "hello": "hallå",
+    "greeting": "Välkommen till Aurelia-lokaliseringsappen",
+    "introText": "Genom att byta språk från rullgardinsmenyn högst upp i denna applikation bör du se texten ändras.",
+    "localizedButtons": "Lokaliserade knappar",
+    "formInputs": "Formuläringångar",
+    "inputPlaceholder": "Detta är en lokaliserad indataplatshållare",
+    "placeholderExampleText": "Platshållarattributet lokaliseras. Du kan ha flera attribut.",
+    "btn": {
+        "submit": "Skicka in!",
+        "cancel": "Avbryt",
+        "confirm": "Ok"
+    }
+}
