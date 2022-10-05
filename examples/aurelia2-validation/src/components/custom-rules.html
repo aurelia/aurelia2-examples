@@ -1,0 +1,36 @@
+<div class="container pt-5">
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Custom Rules</h1>
+            <p>The validation package comes with some validation rules out of the box, but allows you to write your own validation rules as well. All validation logic is handled inside of <code>custom-rules.ts</code></p>
+            <p>In this example we will create two custom rules. One rule will check to make sure a value contains the word dog in it and the other that checks a value is a valid hex color value.</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <form submit.trigger="submit()">
+                <div validation-errors.from-view="errors">
+                    <div class="mb-3">
+                        <input class="form-control" value.bind="person.name & validate" placeholder="Name">
+                    </div>
+        
+                    <div class="mb-3">
+                        <input class="form-control" value.bind="person.age & validate" placeholder="Age (must be over 18)">
+                    </div>
+
+                    <div if.bind="errors.length">
+                        <strong>There were some errors:</strong>
+                        <ul class="errors list-unstyled" >
+                            <li class="text-danger" repeat.for="error of errors">${error.result.message}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>

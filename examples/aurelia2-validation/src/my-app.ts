@@ -25,6 +25,12 @@ export class MyApp {
             title: 'Displaying Errors',
             id: 'displaying-errors'
         },
+        {
+            path: 'custom-rules',
+            component: () => import('./components/custom-rules'),
+            title: 'Custom Rules',
+            id: 'custom-rules'
+        },
 
     ];
 }
