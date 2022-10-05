@@ -29,7 +29,7 @@ Covers deeper parts of routing in Aurelia 2. This application showcases child ro
 
 **Aurelia 2 State**
 
-Covers working with the versatile and powerful Aurelia 2 state plugin for state management. Covers concepts such as binding to input values, working with collections, mutating state values and more.
+Covers working with the versatile and powerful Aurelia 2 state plugin for state management. Covers concepts such as binding to input values, working with collections, mutating state values and more. This is a copy of the todo application from below, but made to use the Store plugin.
 
 [Source](examples/aurelia2-state) 
 [Demo](https://aurelia2-state.vercel.app/)

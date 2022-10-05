@@ -1,19 +1,20 @@
-# Aurelia 2 Todo
+# Aurelia 2 State
 
-A todo application bootstrapped by [aurelia/new](https://github.com/aurelia/new).
+A todo application using the Aurelia State plugin bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
 ## Demo
 
-A demo of this application is running here: https://aurelia2-todo.vercel.app/
+A demo of this application is running here: https://aurelia2-state.vercel.app/
 
 ## Description
 
-A simplistic Aurelia 2 application that is about as standard as you can get.
+See a working implementation of the Aurelia State plugin in an Aurelia todo application.
 
 ## Features:
 
 - Plain CSS
 - TypeScript
+- Aurelia state plugin
 - Webpack for bundling
 
 ## Start dev web server
