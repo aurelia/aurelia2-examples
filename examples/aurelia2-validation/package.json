@@ -10,7 +10,8 @@
   "dependencies": {
     "@aurelia/validation": "latest",
     "@aurelia/validation-html": "latest",
-    "aurelia": "latest"
+    "aurelia": "latest",
+    "bootstrap": "^5.2.2"
   },
   "devDependencies": {
     "eslint": "^8.17.0",
