@@ -1,0 +1,39 @@
+<div class="container pt-5">
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Advanced Example</h1>
+            <p>Injecting the required validation dependencies into the view-model and using the validate binding behavior to validate properties on an object. All validation logic is handled inside of <code>basic-example.ts</code></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <form submit.trigger="submit()">
+                <div validation-errors.from-view="errors">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" value.bind="person.name & validate" placeholder="Name">
+                    </div>
+        
+                    <div class="mb-3">
+                        <input type="email" class="form-control" value.bind="person.email & validate" placeholder="Email">
+                    </div>
+        
+                    <div class="mb-3">
+                        <input type="number" class="form-control" value.bind="person.age & validate" placeholder="Age (must be 18 or older)">
+                    </div>
+
+                    <div if.bind="errors.length">
+                        <strong>There were some errors:</strong>
+                        <ul class="errors list-unstyled" >
+                            <li class="text-danger" repeat.for="error of errors">${error.result.message}</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <button class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>

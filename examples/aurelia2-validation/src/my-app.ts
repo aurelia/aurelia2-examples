@@ -13,6 +13,12 @@ export class MyApp {
             title: 'Basic',
             id: 'basic'
         },
+        {
+            path: 'advanced',
+            component: () => import('./components/advanced-example'),
+            title: 'Advanced',
+            id: 'advanced'
+        },
 
     ];
 }
