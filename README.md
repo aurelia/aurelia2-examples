@@ -27,6 +27,13 @@ Covers deeper parts of routing in Aurelia 2. This application showcases child ro
 [Source](examples/advanced-routing) 
 [Demo](https://advanced-routing.vercel.app/)
 
+**Aurelia 2 State**
+
+Covers working with the versatile and powerful Aurelia 2 state plugin for state management. Covers concepts such as binding to input values, working with collections, mutating state values and more.
+
+[Source](examples/aurelia2-state) 
+[Demo](https://aurelia2-state.vercel.app/)
+
 ### Integrations
 
 **Aurelia 2 Tailwind**
