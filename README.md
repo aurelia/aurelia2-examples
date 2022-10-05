@@ -58,6 +58,15 @@ An Aurelia application using the i18n package to implement localization function
 
 ---
 
+#### Aurelia 2 Validation
+
+An Aurelia application utilizing the Aurelia validation package. This application guides you through simple validation, child component inheritance validation, custom rules, displaying errors and other core validation concepts.
+
+- [Source](examples/aurelia2-validation) 
+- [Demo](https://aurelia2-validation.vercel.app/)
+
+---
+
 ### Integrations
 
 Integrations are third-party libraries and packages like Tailwind and CSS-in-JS solutions.
