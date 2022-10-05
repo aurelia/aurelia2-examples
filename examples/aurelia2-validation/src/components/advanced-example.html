@@ -1,9 +1,13 @@
+<import from="./advanced-example-form"></import>
+
 <div class="container pt-5">
 
     <div class="row">
         <div class="col-6">
             <h1>Advanced Example</h1>
-            <p>Injecting the required validation dependencies into the view-model and using the validate binding behavior to validate properties on an object. All validation logic is handled inside of <code>basic-example.ts</code></p>
+            <p>In this example we showcase how you can use conditional validation using <code>when</code> to have rules that only apply when certain fields or values are provided. All validation logic is handled inside of <code>basic-example.ts</code></p>
+            <p>Try checking the VIP checkbox and hitting submit. Then uncheck it. Notice the error conditionally displays?</p>
+            <p>Please also note the use of a custom element. Using <code>newInstanceForScope</code> will allow validation bindings to be used within child custom elements.</p>
         </div>
     </div>
 
@@ -11,17 +15,7 @@
         <div class="col-6">
             <form submit.trigger="submit()">
                 <div validation-errors.from-view="errors">
-                    <div class="mb-3">
-                        <input type="text" class="form-control" value.bind="person.name & validate" placeholder="Name">
-                    </div>
-        
-                    <div class="mb-3">
-                        <input type="email" class="form-control" value.bind="person.email & validate" placeholder="Email">
-                    </div>
-        
-                    <div class="mb-3">
-                        <input type="number" class="form-control" value.bind="person.age & validate" placeholder="Age (must be 18 or older)">
-                    </div>
+                    <advanced-example-form person.bind="person"></advanced-example-form>
 
                     <div if.bind="errors.length">
                         <strong>There were some errors:</strong>

@@ -7,7 +7,6 @@ export class AdvancedExample {
     name: '',
     email: '',
     age: '',
-    addresses: [],
     isVip: false,
     vipNumber: '',
   };
@@ -15,25 +14,27 @@ export class AdvancedExample {
   public constructor(
     @newInstanceForScope(IValidationController)
     private validationController: IValidationController,
-    @IValidationRules validationRules: IValidationRules
+    @IValidationRules private validationRules: IValidationRules
   ) {
     validationRules
-      .on(this.person)
-      .ensure('name')
-        .required()
-      .ensure('email')
-        .email()
-      .ensure('age')
-        .min(18)
-      .ensure('addresses')
-        .minItems(1)
-      .when((person: any) => person.isVip)
-        .ensure('vipNumber')
-          .minLength(5)
-          .maxLength(10);
+    .on(this.person)
+    .ensure('name')
+      .required()
+    .ensure('email')
+      .email()
+      .required()
+    .ensure('age')
+      .min(18)
+      .required()
+    .when((person: any) => person.isVip)
+      .ensure('vipNumber')
+        .minLength(5)
+        .maxLength(10)
+        .required();
   }
 
   public async submit() {
+    console.log(this.validationController);
     const result = await this.validationController.validate();
 
     if (result.valid) {

@@ -1,0 +1,20 @@
+<div class="mb-3">
+    <input type="text" class="form-control" value.bind="person.name & validate" placeholder="Name">
+</div>
+
+<div class="mb-3">
+    <input type="email" class="form-control" value.bind="person.email & validate" placeholder="Email">
+</div>
+
+<div class="mb-3">
+    <input type="number" class="form-control" value.bind="person.age & validate" placeholder="Age (must be 18 or older)">
+</div>
+
+<div class="mb-3">
+    <label>Is vip?</label>
+    <input type="checkbox" checked.bind="person.isVip & validate">
+</div>
+
+<div class="mb-3" if.bind="person.isVip">
+    <input type="number" min="5" max="10" class="form-control" value.bind="person.vipNumber & validate" placeholder="Your VIP number">
+</div>
