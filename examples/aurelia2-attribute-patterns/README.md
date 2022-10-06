@@ -1,20 +1,20 @@
-# Aurelia 2 Animation Native
+# Aurelia 2 Attribute Patterns
 
-An Aurelia 2 application with native Web Animations API animations, bootstrapped by [aurelia/new](https://github.com/aurelia/new).
+An Aurelia 2 application with custom attribute patterns, bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
 ## Demo
 
-A demo of this application is running here: https://animation-native.vercel.app/
+A demo of this application is running here: https://aurelia2-attribute-patterns.vercel.app/
 
 ## Description
 
-In this example application you will see how easy it is to leverage the Web Animations API to add animations into your Aurelia 2 applications. You will also be introduced to the Motion library which wraps the Web Animations API and gives you nicer syntax and animation options.
+In this example application, you will learn an advanced concept. The ability to configure Aurelia's templating syntax to support syntax of other frameworks like Vue or Angular.
 
 ## Features:
 
 - Plain CSS
 - TypeScript
-- Web Animations API
+- Attribute Patterns API
 - Webpack for bundling
 
 ## Start dev web server

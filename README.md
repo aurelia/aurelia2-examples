@@ -67,6 +67,15 @@ An Aurelia application utilizing the Aurelia validation package. This applicatio
 
 ---
 
+#### Aurelia 2 Attribute Patterns
+
+In this example application, you will learn an advanced concept. The ability to configure Aurelia's templating syntax to support syntax of other frameworks like Vue or Angular.
+
+- [Source](examples/aurelia2-attribute-patterns) 
+- [Demo](https://aurelia2-attribute-patterns.vercel.app/)
+
+---
+
 ### Integrations & Standards API's
 
 Integrations are third-party libraries and packages like Tailwind and CSS-in-JS solutions, native API's like the Web Animations API.
