@@ -30,8 +30,20 @@
             </ul>
 
             <hr>
+
+            <h4>Array.slice</h4>
+            <p>In this example we take a portion of our names array using <code>Array.slice</code>. We'll take the first three names using <code>items.slice(0,3)</code></p>
+
+            <ul>
+                <li repeat.for="name of names.slice(0, 3)">
+                    ${name}
+                </li>
+            </ul>
+
+            <hr>
             
             <h2 class="mb-4">Interpolation Lambda Expressions</h2>
+            <p>We can call lambda functions inside of interpolation in our templates from within <code>\${}</code>. The possibilities this opens up mean you can avoid the need to boilerplate and do it all in the template instead.</p>
 
             <h4>Array.join</h4>
             <p>We can use the <code>Array.join</code> method to create a comma separated list of our names from our <code>names</code> array.</p>
