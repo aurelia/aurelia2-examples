@@ -1,0 +1,30 @@
+<div class="container pt-5">
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Vue Syntax</h1>
+            <p>All bindings in this page are leveraging Vue colon syntax. To see how it pieces together, check out <code>vue-syntax.html</code></p>
+            <p>AttributePattern logic is registered inside <code>main.ts</code>.</p>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2>Text input</h2>
+            <p>Typing into the following form input using <code>:value</code> for binding should result in the value being dislpayed beneath.</p>
+            <input type="text" :value="inputValue" class="form-control form-control-lg">
+            <p>Form value is: ${inputValue}</p>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2>Checkbox</h2>
+            <p>We can also bind to the checked value of a checkbox using <code>:checked</code>.</p>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" :checked="inputChecked">
+              </div>
+            <p>Form value is: ${inputChecked ? 'checked' : 'unchecked'}</p>
+        </div>
+    </div>
+</div>
