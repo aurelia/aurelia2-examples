@@ -73,7 +73,7 @@ Integrations are third-party libraries and packages like Tailwind and CSS-in-JS 
 
 #### Native Animation
 
-An Aurelia 2 application that shows how you can leverage the standards-based Web Animations API to add in animations to your Aurelia applications without any additional dependencies. There is also an example of using a library (which uses the Web Animations API) to perform more complicated animations.
+An Aurelia 2 application that shows how you can leverage the standards-based Web Animations API to add animations to your Aurelia applications without any additional dependencies. There is also an example of using a library (which uses the Web Animations API) to perform more complicated animations.
 
 - [Source](examples/animation-native)
 - [Demo](https://animation-native.vercel.app/)
