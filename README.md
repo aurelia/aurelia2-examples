@@ -116,6 +116,14 @@ An Aurelia 2 application that shows how you can leverage the standards-based Web
 
 ---
 
+#### Aurelia 2 Emotion (CSS-in-JS)
+
+An Aurelia 2 application showcasing how you can integrate CSS-in-JS solution Emotion to write CSS using Javascript in your Aurelia applications.
+
+- [Source](examples/aurelia2-emotion) 
+- [Demo](https://aurelia2-emotion.vercel.app/)
+---
+
 #### Aurelia 2 Tailwind
 
 An Aurelia 2 application that showcases how to use TailwindCSS with Aurelia 2. Integration is handled during the build step inside of the PostCSS Loader configuration inside `webpack.config.js` and main base Tailwind styles are inside of `src/my-app.css`

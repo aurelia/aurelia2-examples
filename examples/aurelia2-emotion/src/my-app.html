@@ -1,0 +1,15 @@
+<div class="container">
+
+    <h2>Using a custom attribute</h2>
+    <p>The following example uses a custom attribute found in src/resources/custom-attributes/emotion.ts which is then registered in main.ts.</p>
+    <div emotion.bind="cssStyles">Hover me and I change color</div>
+
+    <h2>Template literals</h2>
+    <p>We can also use the css method in Emotion to generate CSS from a template literal. We then bind the value to the class attribute on our element to style it. Same outcome as above.</p>
+
+    <div class="${cssStyles2}">Hover me and I change color too!</div>
+
+    <h2>Source Code</h2>
+    <p>All of the code for the above examples is found in aurelia2-emotion/src/my-app.ts.</p>
+
+</div>
