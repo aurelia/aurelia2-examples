@@ -67,9 +67,18 @@ An Aurelia application utilizing the Aurelia validation package. This applicatio
 
 ---
 
-### Integrations
+### Integrations & Standards API's
 
-Integrations are third-party libraries and packages like Tailwind and CSS-in-JS solutions.
+Integrations are third-party libraries and packages like Tailwind and CSS-in-JS solutions, native API's like the Web Animations API.
+
+#### Native Animation
+
+An Aurelia 2 application that shows how you can leverage the standards-based Web Animations API to add in animations to your Aurelia applications without any additional dependencies. There is also an example of using a library (which uses the Web Animations API) to perform more complicated animations.
+
+- [Source](examples/animation-native)
+- [Demo](https://animation-native.vercel.app/)
+
+---
 
 #### Aurelia 2 Tailwind
 
@@ -77,8 +86,6 @@ An Aurelia 2 application that showcases how to use TailwindCSS with Aurelia 2. I
 
 - [Source](examples/aurelia2-tailwind) 
 - [Demo](https://aurelia2-tailwind.vercel.app/)
-
----
 
 ### Apps & Fun
 
@@ -99,8 +106,6 @@ An application showcasing how to interact with a third-party API to display real
 
 - [Source](examples/crypto-price-tracker) 
 - [Demo](https://aurelia2-crypto-tracker.vercel.app/)
-
----
 
 #### Widget Dashboard
 
@@ -126,5 +131,3 @@ A fun Aurelia 2 QR creator application. Enter a URL and get a QR code in return.
 
 - [Source](examples/qr-creator-app) 
 - [Demo](https://qr-creator-app.vercel.app/)
-
----
