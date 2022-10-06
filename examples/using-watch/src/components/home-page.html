@@ -1,0 +1,45 @@
+<div class="container pt-5">
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Using Watch</h1>
+            <p>In this section we are going to learn how to use the powerful <code>@watch</code> decorator to watch data. All code is defined inside of <code>home-page.ts</code></p>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2>Watching class properties</h2>
+            <p>You can watch a property in your view-model and run a function when it changes. The console on the right hand side will update as you type.</p>
+
+            <input type="text" value.bind="name">
+
+            <hr>
+
+            <h3>Observing array length changes</h3>
+            <p>The <code>@watch</code> decorator also allows us to observe the length of an array. Click the button to add a new item to the <code>items</code> array.</p>
+            <button type="button" class="btn btn-primary" click.trigger="add()">Add Item</button>
+
+            <hr>
+
+            <h3>Complex watch expression</h3>
+            <p>We can use array methods to observe for changes to our array and values inside of it. Click the button to add a new item to the <code>items2</code> array. Our watch expression will return the values in our array separated by a comma.</p>
+            <button type="button" class="btn btn-primary" click.trigger="addItems2()">Add Item2</button>
+
+            <hr>
+
+            <h2>Rob Watcher</h2>
+            <p>Type in the value "Rob" (without the quotes) to see a special surprise in the console to the right. Once you've typed it, look what happens when you delete the value.</p>
+
+            <input type="text" value.bind="name2">
+        </div>
+
+        <div class="col-6">
+            <h6 class="mb-0">Console output</h6>
+            <pre>
+                <code class="d-block" repeat.for="item of console">${item}</code>
+            </pre>
+        </div>
+    </div>
+
+</div>

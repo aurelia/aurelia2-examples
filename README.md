@@ -67,6 +67,15 @@ An Aurelia application utilizing the Aurelia validation package. This applicatio
 
 ---
 
+#### Aurelia 2 @watch decorator
+
+An Aurelia application that shows how you can leverage the powerful @watch decorator to observe values, as well as expressions inside of your applications and react to them.
+
+- [Source](examples/using-watch) 
+- [Demo](https://using-watch.vercel.app/)
+
+---
+
 #### Aurelia 2 Shadow DOM
 
 In this example application, you'll learn how to work with Shadow DOM for encapsulating styles in your Aurelia applications. Shadow DOM is a native standards-based way to keep styles self-contained. We also show how you can use libraries like Bootstrap which leverage global styles.
