@@ -1,0 +1,37 @@
+<div class="container pt-5">
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Global CSS Styles</h1>
+            <p>In some instances you might be dealing with third-party libraries such as Bootstrap which rely on styles being present in the global scope. This can be challenging in a ShadowDOM environment which does not have global styles (everything is walled off).</p>
+            <p>Fortunately, Aurelia allows us to implement global styles where we register the style plugin inside of <code>main.ts</code>. You will notice there is a configuration property <code>sharedStyles</code> which is an array of imported styles. Every component gets these shared styles injected.</p>
+            <p>You might have noticed, but this example application uses Bootstrap for the styles (grid system and all). As you can see, it is possible for Bootstrap and Shadow DOM to coexist.</p>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2>Bootstrap Buttons</h2>
+            <button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2>Bootstrap Inputs</h2>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                <label class="form-check-label" for="flexCheckDefault">
+                    Default checkbox
+                  </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                <label class="form-check-label" for="flexCheckChecked">
+                    Checked checkbox
+                  </label>
+            </div>
+        </div>
+    </div>
+</div>

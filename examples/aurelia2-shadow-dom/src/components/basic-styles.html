@@ -1,0 +1,27 @@
+<import from="./basic-styles-child"></import>
+
+<div class="container pt-5">
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Basic Styles</h1>
+            <p>In this section, we'll see how Shadow DOM works by creating boundaries and prevent global styles from leaking into your components. To see how it pieces together, check out <code>basic-styles.html</code></p>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-6">
+            <h2>Component Styles</h2>
+            <p class="thing">This style is defined in basic-styles.css</p>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2>Shadow DOM Boundaries</h2>
+            <p>In this example we have a component which has a class name the same as the one we defined above. Notice that the class names are the same, but the styles are different? Our thing class will not cross the boundary of our component.</p>
+            <basic-styles-child></basic-styles-child>
+            <p>Right click the text on this page and inspect it using the browser developer tools inspector.</p>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,22 @@
+<import from="./access-child-component"></import>
+
+<div class="container pt-5">
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Accessing Shadow DOM</h1>
+            <p>In this example Shadow DOM is running in open mode. This means we can access the <code>shadowRoot</code> and query/modify the contents within.</p>
+            <p>Being able to pierce through the Shadow DOM is convenient, especially during testing.</p>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2>Component Styles</h2>
+            <access-child-component></access-child-component>
+            <hr>
+            <p><strong>This value is queried from the above child component:</strong> ${childText}</p>
+            <p>Look inside of <code>access-shadow-dom.ts</code> to see how we query across the ShadowDOM boundary.</p>
+        </div>
+    </div>
+</div>
