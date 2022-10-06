@@ -1,0 +1,51 @@
+<div class="container pt-5">
+
+    <div class="row">
+        <div class="col-6">
+            <h1>Lambda Expressions</h1>
+            <p>In this section we are going to learn how to use lambda expressions to call functions and perform other tasks from within our views. All code is defined inside of <code>home-page.html</code></p>
+        </div>
+    </div>
+
+    <div class="row mb-5">
+        <div class="col-6">
+            <h2 class="mb-4">Repeat.for Lambda Expressions</h2>
+
+            <h4>Array.filter</h4>
+            <p>In the following example we filter names by their starting letter "J". We use <code>Array.filter</code> followed by the <code>startsWith</code> function.</p>
+
+            <ul>
+                <li repeat.for="name of names.filter(item => item.startsWith('J'))">
+                    ${name}
+                </li>
+            </ul>
+
+            <h4>Array.filter and Array.sort</h4>
+            <p>We can combined multiple functions inside of our Lambda Expressions as well. In this example we filter out any names without a name value, we can use <code>Array.sort</code> to sort all names by age.</p>
+
+            <ul>
+                <li repeat.for="name of names2.filter(x => x.name != '').sort((a, b) => a.age - b.age)">
+                    ${name.name}
+                </li>
+            </ul>
+
+            <hr>
+            
+            <h2 class="mb-4">Interpolation Lambda Expressions</h2>
+
+            <h4>Array.join</h4>
+            <p>We can use the <code>Array.join</code> method to create a comma separated list of our names from our <code>names</code> array.</p>
+
+            <p>${names.join(', ')}</p>
+
+            <hr>
+
+            <h4>Array.reduce</h4>
+            <p>We can use the <code>Array.reduce</code> method to reduce an array of values down to a singular value from our <code>products</code> array.</p>
+
+            <p>Total: ${products.reduce((sum, product) => sum + product.price, 0)}</p>
+
+        </div>
+    </div>
+
+</div>

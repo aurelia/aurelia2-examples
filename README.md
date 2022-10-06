@@ -67,6 +67,15 @@ An Aurelia application utilizing the Aurelia validation package. This applicatio
 
 ---
 
+#### Aurelia 2 Lambda Expressions
+
+An Aurelia 2 application that shows how to leverage lambda expressions in your Aurelia applications. Discover ways to simplify use cases where you might think to use a value converter and other handy scenarios.
+
+- [Source](examples/aurelia2-lamba-expressions) 
+- [Demo](https://aurelia2-lamba-expressions.vercel.app/)
+
+---
+
 #### Aurelia 2 @watch decorator
 
 An Aurelia application that shows how you can leverage the powerful @watch decorator to observe values, as well as expressions inside of your applications and react to them.
