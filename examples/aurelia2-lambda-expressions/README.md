@@ -4,7 +4,7 @@ An Aurelia 2 application that shows how to leverage lambda expressions in your A
 
 ## Demo
 
-A demo of this application is running here: https://aurelia2-lamba-expressions.vercel.app/
+A demo of this application is running here: https://aurelia2-lambda-expressions.vercel.app/
 
 ## Description
 

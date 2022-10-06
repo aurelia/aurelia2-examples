@@ -71,8 +71,8 @@ An Aurelia application utilizing the Aurelia validation package. This applicatio
 
 An Aurelia 2 application that shows how to leverage lambda expressions in your Aurelia applications. Discover ways to simplify use cases where you might think to use a value converter and other handy scenarios.
 
-- [Source](examples/aurelia2-lamba-expressions) 
-- [Demo](https://aurelia2-lamba-expressions.vercel.app/)
+- [Source](examples/aurelia2-lambda-expressions) 
+- [Demo](https://aurelia2-lambda-expressions.vercel.app/)
 
 ---
 
