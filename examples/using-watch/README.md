@@ -1,20 +1,20 @@
-# Aurelia 2 Animation Native
+# Aurelia 2 @watch
 
-An Aurelia 2 application with native Web Animations API animations, bootstrapped by [aurelia/new](https://github.com/aurelia/new).
+An Aurelia 2 application that shows how to use the @watch decorator to observe expressions and properties, bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
 ## Demo
 
-A demo of this application is running here: https://animation-native.vercel.app/
+A demo of this application is running here: https://using-watch.vercel.app/
 
 ## Description
 
-In this example application you will see how easy it is to leverage the Web Animations API to add animations into your Aurelia 2 applications. You will also be introduced to the Motion library which wraps the Web Animations API and gives you nicer syntax and animation options.
+An Aurelia application that shows how you can leverage the powerful @watch decorator to observe values, as well as expressions inside of your applications and react to them.
 
 ## Features:
 
 - Plain CSS
 - TypeScript
-- Web Animations API
+- Working with the Aurelia @watch decorator
 - Webpack for bundling
 
 ## Start dev web server
