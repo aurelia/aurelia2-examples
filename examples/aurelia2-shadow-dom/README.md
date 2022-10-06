@@ -1,20 +1,21 @@
-# Aurelia 2 Attribute Patterns
+# Aurelia 2 Shadow DOM
 
-An Aurelia 2 application with custom attribute patterns, bootstrapped by [aurelia/new](https://github.com/aurelia/new).
+An Aurelia 2 application showing you how to work with Shadow DOM, bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
 ## Demo
 
-A demo of this application is running here: https://aurelia2-attribute-patterns.vercel.app/
+A demo of this application is running here: https://aurelia2-shadow-dom.vercel.app/
 
 ## Description
 
-In this example application, you will learn an advanced concept. The ability to configure Aurelia's templating syntax to support syntax of other frameworks like Vue or Angular.
+In this example application, you'll learn how to work with Shadow DOM for encapsulating styles in your Aurelia applications. Shadow DOM is a native standards-based way to keep styles self-contained. We also show how you can use libraries like Bootstrap which leverage global styles.
 
 ## Features:
 
 - Plain CSS
 - TypeScript
-- Attribute Patterns API
+- Shadow DOM
+- Adaptive Stylesheets
 - Webpack for bundling
 
 ## Start dev web server

@@ -67,6 +67,15 @@ An Aurelia application utilizing the Aurelia validation package. This applicatio
 
 ---
 
+#### Aurelia 2 Shadow DOM
+
+In this example application, you'll learn how to work with Shadow DOM for encapsulating styles in your Aurelia applications. Shadow DOM is a native standards-based way to keep styles self-contained. We also show how you can use libraries like Bootstrap which leverage global styles.
+
+- [Source](examples/aurelia2-shadow-dom) 
+- [Demo](https://aurelia2-shadow-dom.vercel.app/)
+
+---
+
 #### Aurelia 2 Attribute Patterns
 
 In this example application, you will learn an advanced concept. The ability to configure Aurelia's templating syntax to support syntax of other frameworks like Vue or Angular.
