@@ -1,19 +1,20 @@
-# Aurelia 2 Todo
+# Aurelia 2 Metronome App
 
-A todo application bootstrapped by [aurelia/new](https://github.com/aurelia/new).
+A metronome application bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
 ## Demo
 
-A demo of this application is running here: https://aurelia2-todo.vercel.app/
+A demo of this application is running here: https://metronome-app.vercel.app/
 
 ## Description
 
-A simplistic Aurelia 2 application that is about as standard as you can get.
+A simplistic Aurelia 2 application that is about as standard as you can get. A metronome with input slider for setting the BPM.
 
 ## Features:
 
 - Plain CSS
 - TypeScript
+- Working with native Audio API's
 - Webpack for bundling
 
 ## Start dev web server
