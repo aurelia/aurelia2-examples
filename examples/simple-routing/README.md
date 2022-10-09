@@ -4,7 +4,7 @@ An Aurelia 2 application bootstrapped by [aurelia/new](https://github.com/aureli
 
 ## Demo
 
-A demo of this application is running here: https://aurelia2-todo.vercel.app/
+A demo of this application is running here: https://simple-routing.vercel.app/
 
 ## Description
 
