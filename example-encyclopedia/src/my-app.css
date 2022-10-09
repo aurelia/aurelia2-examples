@@ -1,3 +1,27 @@
-.message {
-  background-color: lightblue;
+body, html, my-app {
+  height: 100%;
+}
+
+my-app {
+  display: block;
+}
+
+.aside {
+  background: #ED2B88;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  width: 265px;
+}
+
+.aside .accordion {
+  --bs-accordion-border-radius: 0 !important;
+  --bs-accordion-inner-border-radius: 0 !important;
+  --bs-accordion-border-width: 0 !important;
+  --bs-accordion-btn-bg: transparent !important;
+  --bs-accordion-btn-focus-border-color: transparent !important;
+  --bs-accordion-btn-focus-box-shadow: none !important;
+  --bs-accordion-active-color: #FFF;
+  --bs-accordion-active-bg: transparent !important;
+  --bs-accordion-bg: #ED2B88;
 }
