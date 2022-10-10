@@ -25,3 +25,13 @@ my-app {
   --bs-accordion-active-bg: transparent !important;
   --bs-accordion-bg: #ED2B88;
 }
+
+au-viewport {
+  display: block;
+  height: 100%;
+}
+
+au-viewport > :first-child {
+  display: block;
+  height: 100%;
+}

@@ -1,9 +1,17 @@
-import Aurelia from 'aurelia';
-import { MyApp } from './my-app';
+import { AnimationHooks } from "./animation-hooks";
+import Aurelia from "aurelia";
+import { RouterConfiguration } from "@aurelia/router";
+import { MyApp } from "./my-app";
 
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap';
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap";
 
-Aurelia
+Aurelia.register(
+  RouterConfiguration.customize({
+    useUrlFragmentHash: false,
+    swapOrder: "attach-detach-simultaneously",
+  }),
+  AnimationHooks
+)
   .app(MyApp)
   .start();
