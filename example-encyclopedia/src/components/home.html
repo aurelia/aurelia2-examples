@@ -18,7 +18,7 @@
 </div>
 
 <div class="row row-flex">
-    <div class="col-3 mb-3" repeat.for="item of items.filter(i => i.category == currentCategory || currentCategory == '').filter(i => i.tags.includes(currentTag) || currentTag == '').filter(i => i.name.toLowerCase().includes(searchTerm) || !searchTerm.length)">
+    <div class="col-4 mb-3" repeat.for="item of items.filter(i => i.category == currentCategory || currentCategory == '').filter(i => i.tags.includes(currentTag) || currentTag == '').filter(i => i.name.toLowerCase().includes(searchTerm) || !searchTerm.length)">
         <div class="card item-card">
             <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${item.name}</h5>
