@@ -32,7 +32,7 @@
                 </div>
 
                 <div class="tags d-flex">
-                    <a href="javascript:void(0);" class="${tag == currentTag ? 'active' : ''}" repeat.for="tag of item.tags" click.trigger="setTag(tag)">${tag}</a>
+                    <a href="javascript:void(0);" repeat.for="tag of item.tags" click.trigger="setTag(tag)">${tag}</a>
                 </div>
             </div>
         </div>

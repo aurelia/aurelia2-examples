@@ -13,11 +13,11 @@ export const AppItems = [
         source: 'advanced-routing',
         demo: 'https://advanced-routing.vercel.app/',
         category: 'concepts-fundamentals',
-        tags: ['router', 'plugins']
+        tags: ['router', 'auth', 'lifecycle-hooks', 'plugins']
     },
     {
         name: 'State',
-        description: `Covers working with the versatile and powerful Aurelia 2 state plugin for state management. Covers concepts such as binding to input values, working with collections, mutating state values and more. This is a copy of the todo application from below but made to use the Store plugin.`,
+        description: `Covers working with the versatile and powerful Aurelia 2 State plugin for state management. Covers concepts such as binding to input values, working with collections, mutating state values and more. This is a copy of the todo application from below but made to use the Store plugin.`,
         source: 'aurelia2-state',
         demo: 'https://aurelia2-state.vercel.app/',
         category: 'concepts-fundamentals',
