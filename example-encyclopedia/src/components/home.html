@@ -3,6 +3,11 @@
 <div class="row">
     <div class="col-12 mb-3">
         <h1>Aurelia 2 Examples</h1>
+        <div class="row">
+            <div class="col-5">
+                <p if.bind="currentCategory != ''" class="mb-0">${categories.find(c => c.slug == currentCategory).description}</p>
+            </div>
+        </div>
 
         <nav class="d-flex align-items-center categories">
             <div class="category-items">
