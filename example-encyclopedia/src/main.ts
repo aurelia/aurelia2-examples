@@ -9,6 +9,7 @@ import "bootstrap";
 Aurelia.register(
   RouterConfiguration.customize({
     useUrlFragmentHash: false,
+    useHref: false,
     swapOrder: "attach-detach-simultaneously",
   }),
   AnimationHooks

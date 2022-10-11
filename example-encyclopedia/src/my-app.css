@@ -1,5 +1,16 @@
+:root {
+  --items-bg: rgb(38, 38, 38);
+  --nice-pink: #E07E8A;
+  --nice-pink-darker: #D9737F;
+}
+
 body, html, my-app {
   height: 100%;
+}
+
+body {
+  --bs-body-bg: #1D1D1D;
+  --bs-body-color: rgba(255, 255, 255, 0.6);
 }
 
 my-app {
@@ -7,11 +18,15 @@ my-app {
 }
 
 .aside {
-  background: #ED2B88;
+  background: var(--items-bg);
   color: #FFF;
   display: flex;
   flex-direction: column;
   width: 265px;
+}
+
+.aside a {
+  color: #FFF;
 }
 
 .aside .accordion {
@@ -23,7 +38,8 @@ my-app {
   --bs-accordion-btn-focus-box-shadow: none !important;
   --bs-accordion-active-color: #FFF;
   --bs-accordion-active-bg: transparent !important;
-  --bs-accordion-bg: #ED2B88;
+  --bs-accordion-bg: none;
+  --bs-accordion-btn-color: #FFF;
 }
 
 au-viewport {
@@ -34,4 +50,9 @@ au-viewport {
 au-viewport > :first-child {
   display: block;
   height: 100%;
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
 }

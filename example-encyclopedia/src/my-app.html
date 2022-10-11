@@ -1,28 +1,7 @@
-<div class="d-flex flex-column h-100">
-
-  <div class="page d-flex flex-row h-100">
-
-    <aside class="aside">
-      <div class="accordion" id="accordionNav">
-        <div class="accordion-item" repeat.for="menuItem of menuItems">
-          <h2 class="accordion-header">
-            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#${menuItem.id}" aria-expanded="true" aria-controls="${menuItem.id}">${menuItem.heading}</button>
-          </h2>
-          <div id="${menuItem.id}" class="accordion-collapse collapse show" data-bs-parent="#accordionNav">
-            <div class="accordion-body">
-              <nav>
-                <a repeat.for="child of menuItem.items" load="/item/${child.source}">${child.name}</a>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </aside>
-
-    <div class="wrapper d-flex flex-column" style="flex:1;">
+<div class="container py-5">
+  <div class="row">
+    <div class="col-12">
       <au-viewport></au-viewport>
     </div>
-
   </div>
-
 </div>

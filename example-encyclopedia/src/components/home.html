@@ -1,1 +1,40 @@
-<h1>Home</h1>
+<import from="./search-icon.html"></import>
+
+<div class="row">
+    <div class="col-12 mb-3">
+        <h1>Aurelia 2 Examples</h1>
+
+        <nav class="d-flex align-items-center categories">
+            <div class="category-items">
+                <button type="button" class="${currentCategory == '' ? 'active' : ''}" click.trigger="setCategory('')">All</button>
+                <button type="button" class="${currentCategory == category.slug ? 'active' : ''}" repeat.for="category of categories" click.trigger="setCategory(category.slug)">${category.name}</button>
+            </div>
+            <div class="search">
+                <input class="form-control" type="text" value.bind="searchTerm" placeholder="Search...">
+            </div>
+        </nav>
+        <nav class="d-flex selected-tag align-items-center" if.bind="currentTag != ''">Selected tag: <a href="javascript:void(0);" click.trigger="setTag('')">${currentTag} <span>[x]</span></a></nav>
+    </div>
+</div>
+
+<div class="row row-flex">
+    <div class="col-3 mb-3" repeat.for="item of items.filter(i => i.category == currentCategory || currentCategory == '').filter(i => i.tags.includes(currentTag) || currentTag == '').filter(i => i.name.toLowerCase().includes(searchTerm) || !searchTerm.length)">
+        <div class="card item-card">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">${item.name}</h5>
+
+                <p>${item.description}</p>
+
+                <div class="mb-3">
+                    <a href="${item.demo}" target="_blank" class="item-link">Demo</a>
+                    <span class="pipe"> | </span>
+                    <a href="https://github.com/aurelia/aurelia2-examples/tree/main/examples/${item.source}" target="_blank" class="item-link">Source</a>
+                </div>
+
+                <div class="tags d-flex">
+                    <a href="javascript:void(0);" class="${tag == currentTag ? 'active' : ''}" repeat.for="tag of item.tags" click.trigger="setTag(tag)">${tag}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

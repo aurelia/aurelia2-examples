@@ -1,3 +1,71 @@
-home {
-    background: #333;
+.categories {
+    border-bottom: 2px solid var(--nice-pink-darker);
+    margin-bottom: 20px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+.categories button {
+    appearance: none;
+    background: none;
+    border: none;
+    color: #FFF;
+    margin: 0;
+    margin-right: 12px;
+    padding: 0;
+}
+
+.categories button.active {
+    font-weight: bold;
+}
+
+.categories button:last-child {
+    margin-right: 0;
+}
+
+.selected-tag {
+    font-size: 0.8rem;
+}
+
+.selected-tag a {
+    background: var(--nice-pink);
+    color: #FFF;
+    font-size: 0.7rem;
+    margin-left: 10px;
+    padding: 3px 10px;
+    text-decoration: none;
+}
+
+.search {
+    margin-left: auto;
+}
+
+.item-card {
+    --bs-card-bg: var(--items-bg);
+    --bs-link-color: var(--nice-pink);
+    --bs-link-hover-color: var(--nice-pink-darker);
+    
+    height: 100%;
+}
+
+.item-link {
+    text-decoration: none;
+    transition: all 2s ease;
+}
+
+.tags {
+    margin-top: auto;
+}
+
+.tags a {
+    background: #1D1D1D;
+    color: #FFF;
+    font-size: 0.7rem;
+    margin-right: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.tags .active {
+    background: var(--nice-pink);
 }
