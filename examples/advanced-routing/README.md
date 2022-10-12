@@ -1,4 +1,4 @@
-# Simple Routing
+# Advanced Routing
 
 An Aurelia 2 application bootstrapped by [aurelia/new](https://github.com/aurelia/new).
 
