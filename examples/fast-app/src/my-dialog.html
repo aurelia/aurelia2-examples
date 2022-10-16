@@ -1,0 +1,13 @@
+<fast-dialog id="example1" class="example-dialog" aria-label="Simple modal dialog" modal="true">
+  <div class="dialog-wrapper">
+    <div class="dialog-content">
+      <h2>Dialog</h2>
+      <p>This is an example dialog.</p>      
+      <fast-text-field placeholder="introduce some text..." value.bind="valueFromDialog"></fast-text-field>      
+    </div>
+    <div class="dialog-footer">
+      <fast-button click.delegate="accept">Accept</fast-button>
+      <fast-button click.delegate="cancel">Close Dialog</fast-button>  
+    </div>
+  </div>  
+</fast-dialog>
