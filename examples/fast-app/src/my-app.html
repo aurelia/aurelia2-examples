@@ -1,0 +1,21 @@
+<fast-card id="main-card">    
+    <fast-tabs>
+        <fast-tab slot="tab">Text field</fast-tab>
+        <fast-tab slot="tab">Dialog</fast-tab>
+        <fast-tab slot="tab">Tree view</fast-tab>        
+        <fast-tab-panel slot="tabpanel">
+            <h2>${message}</h2>
+            <fast-text-field placeholder="name" value.bind="message"></fast-text-field>
+        </fast-tab-panel>
+        <fast-tab-panel slot="tabpanel">
+            <fast-button appearance="accent" click.trigger="showDialog()">Open...</fast-button>
+        </fast-tab-panel>
+        <fast-tab-panel slot="tabpanel">
+            <fast-tree-view>
+                <fast-tree-item>Tree item 1<fast-tree-item slot="item">Tree item 1 - 1</fast-tree-item>
+                </fast-tree-item>
+                <fast-tree-item>Tree item 2</fast-tree-item>
+            </fast-tree-view>
+        </fast-tab-panel>        
+    </fast-tabs>    
+</fast-card>
