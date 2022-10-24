@@ -61,7 +61,7 @@ module.exports = function(env, { analyze }) {
     },
     devServer: {
       historyApiFallback: true,
-      open: !process.env.CI,
+      open: false,
       port: 8877
     },
     module: {
