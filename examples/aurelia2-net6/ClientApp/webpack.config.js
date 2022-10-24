@@ -62,7 +62,14 @@ module.exports = function(env, { analyze }) {
     devServer: {
       historyApiFallback: true,
       open: false,
-      port: 8877
+      port: 8877,
+      proxy: {
+        '/api/**': {
+          target: 'https://localhost:7024',
+          secure: false,
+          changeOrigin: true
+        }
+      }
     },
     module: {
       rules: [
