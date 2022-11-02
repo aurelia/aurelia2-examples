@@ -11,7 +11,7 @@
     "@microsoft/fast-components": "^2.30.6",
     "@microsoft/fast-element": "^1.10.5",
     "aurelia": "latest",
-    "aurelia-fast-adapter": "^1.0.5"
+    "aurelia-fast-adapter": "^1.0.6"
   },
   "devDependencies": {
     "eslint": "^8.17.0",
