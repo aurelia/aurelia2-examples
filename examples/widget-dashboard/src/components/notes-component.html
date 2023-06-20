@@ -4,7 +4,7 @@
     <button type="button" click.trigger="addNote()">Add note</button>
 
     <ul class="notes">
-        <li repeat.for="text of notes">${text} <button type="button" class="delete-btn" click.delegate="removeNote($index)">x</button></li>
+        <li repeat.for="text of notes">${text} <button type="button" class="delete-btn" click.trigger="removeNote($index)">x</button></li>
     </ul>
 
 </div>

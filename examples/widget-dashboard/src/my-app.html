@@ -1,5 +1,6 @@
 <div class="container">
+    <!-- <au-compose component.bind="components[0]"></au-compose> -->
     <template repeat.for="component of components">
-        <au-compose containerless view-model.bind="component"></au-compose>
+        <au-compose component.bind="component"></au-compose>
     </template>
 </div>
