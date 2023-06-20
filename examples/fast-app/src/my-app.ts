@@ -1,4 +1,4 @@
-import { DialogDeactivationStatuses, IDialogService } from "aurelia";
+import { DialogDeactivationStatuses, IDialogService } from "@aurelia/dialog";
 import { MyDialog } from "./my-dialog";
 
 export class MyApp {
@@ -14,7 +14,7 @@ export class MyApp {
       lock: false
     }).whenClosed((response) => {
       if (response.status === DialogDeactivationStatuses.Ok) {
-        var res = <{ valueFromDialog: string }>response.value;
+        const res = <{ valueFromDialog: string }>response.value;
         alert(res.valueFromDialog);
       }
     });

@@ -1,8 +1,8 @@
-import { IDialogController } from "aurelia";
+import { IDialogController } from "@aurelia/dialog";
 
 export class MyDialog
 {
-    valueFromDialog: string = '';
+    valueFromDialog = '';
     
     constructor(@IDialogController private dialogController: IDialogController) 
     {
