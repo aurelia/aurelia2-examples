@@ -1,7 +1,16 @@
 # .NET 6 SPA with Aurelia 2 Example:
 
-To start open move to project folder in a console in project and write `dotnet run`.
-..or open project in VS Code and press RUN.
+To use the SPA proxy in .net the SPA server should be launched with:
+```
+> cd examples\aurelia2-net6\ClientApp
+> pnpm install &&  pnpm start
+```
+Then the server application should be launched with:
+```
+> cd ..
+> dotnet run
+```
+
 
 ## SPA proxy notes (in development Env):
 - SPA in .net project proxy is configured in csproj (SpaRoot elements)
