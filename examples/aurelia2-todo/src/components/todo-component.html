@@ -9,7 +9,7 @@
         </div>
 
         <div class="todo-items">
-            <todo-item repeat.for="todo of todos" todo.bind="todo" index.bind="$index" delete-todo.call="deleteTodo($index)"></todo-item>
+            <todo-item repeat.for="todo of todos"  todo.bind="todo"  index.bind="$index" delete-todo.trigger="deleteTodo($index)"></todo-item>             
         </div>
     </div>
 </div>

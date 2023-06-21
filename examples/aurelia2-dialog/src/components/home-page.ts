@@ -1,4 +1,4 @@
-import { DialogDeactivationStatuses, IDialogService } from "aurelia";
+import { DialogDeactivationStatuses, IDialogService } from "@aurelia/dialog";
 import { MyDialog } from "./my-dialog";
 
 export class HomePage {

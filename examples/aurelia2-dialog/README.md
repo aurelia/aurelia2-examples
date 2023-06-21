@@ -19,11 +19,11 @@ A simplistic application that shows how to work with the router in Aurelia 2. No
 
 ## Start dev web server
 
-    npm start
+    pnpm start
 
 ## Build the app in production mode
 
-    npm run build
+    pnpm build
 
 It builds all files to dist folder. To deploy to production server, copy all the `dist/*` files to production root folder.
 
@@ -40,7 +40,7 @@ root_folder/foo.12345.js
 
 ## Unit Tests
 
-    npm run test
+    pnpm test
 
 Run unit tests in watch mode.
 

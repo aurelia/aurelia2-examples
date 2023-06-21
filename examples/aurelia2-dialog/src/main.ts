@@ -1,4 +1,5 @@
-import Aurelia, { DefaultDialogGlobalSettings, DialogConfiguration, DialogDefaultConfiguration, DialogService } from 'aurelia';
+import Aurelia from 'aurelia';
+import {  DefaultDialogGlobalSettings, DialogConfiguration, DialogDefaultConfiguration } from '@aurelia/dialog';
 import { RouterConfiguration } from '@aurelia/router';
 import { MyApp } from './my-app';
 

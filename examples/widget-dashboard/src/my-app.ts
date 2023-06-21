@@ -7,9 +7,9 @@ import { DateComponent } from './components/date-component';
 export class MyApp {
   public components = [
     NotesComponent,
-    GeoipComponent,
-    DateComponent,
-    ExchangeComponent,
-    DogComponent
+     GeoipComponent,
+     DateComponent,
+     ExchangeComponent,
+     DogComponent
   ];
 }
