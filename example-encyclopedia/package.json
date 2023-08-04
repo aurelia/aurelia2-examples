@@ -9,8 +9,8 @@
   "license": "UNLICENSED",
   "dependencies": {
     "aurelia": "latest",
-    "bootstrap": "^5.2.2",
-    "motion": "^10.14.2"
+    "bootstrap": "^5.3.1",
+    "motion": "^10.16.2"
   },
   "devDependencies": {
     "@aurelia/testing": "latest",

@@ -1,8 +1,8 @@
 {
-    "name": "@vheissu/aurelia2-plugins",
+    "name": "@aurelia/aurelia2-examples",
     "version": "1.0.0",
-    "description": "A collection of Aurelia 2 plugins",
-    "repository": "https://github.com/Vheissu/aurelia2-plugins",
+    "description": "A collection of Aurelia 2 examples",
+    "repository": "https://github.com/aurelia/aurelia2-examples",
     "author": "Dwayne Charrington <dwaynecharrington@gmail.com",
     "license": "MIT",
     "scripts": {
